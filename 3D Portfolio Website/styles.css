@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+*{
+    font-family: "Montserrat";
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --orange: #FF6600;
+    --light-gray: #392020;
+    --green: #F5F5F5;
+    --purple: #604CC3;
+    --spancolor: #f5f5f5;
+  }
+.container{
+    background-color:  var(--orange);
+}
+
+.salute {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative; /* Add this line */
+  }
+
+.saluteTextContainer{
+    flex: 3;
+}
+.saluteImgContainer{
+    flex: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.saluteText {
+  top: 30px;
+  position: relative;
+  font-size: 60vw;
+  color: var(--light-gray);
+  cursor: default;
+  text-shadow: 6px 6px 10px rgba(54, 41, 41, 0.3);
+}
+.saluteText::selection {
+    background-color: #9d501d;
+    color: #043006;
+}
+
+.saluteImgwrapper {
+    background: linear-gradient(to bottom, #245269, #001727);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 22vw;
+    height: 26vw;
+    border-bottom-left-radius: 320px;
+    border-bottom-right-radius: 320px;
+    overflow: hidden; /* Add this line */
+    bottom: 11px;
+    left: 40px;
+    position: absolute;
+  }
+
+  .saluteImgwrapper img {
+    transform: scale(1.2);
+    position: absolute;
+    width: 100%; /* Adjust the width to fit the parent */
+    height: 100%; /* Adjust the height to fit the parent */
+    left: 0;
+    top: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    object-fit: contain;
+  }
+
+.imgTextDesc{
+    /* background-color: aqua; */
+    width: 30vw;
+    /* text-align: center; */
+    color: var(--light-gray);
+    padding: 2px 2px;
+    top: 10px;
+    position: absolute;
+    /* border:1px solid #001727; */
+}
+
+h4{
+    cursor: default;
+    font-weight: 900;
+    font-size: 3vh;
+}
+
+.imgTextDesc span{
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--spancolor);
+    /* -webkit-text-stroke: 1px black; */
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
+    -moz-animation: glow 3s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    0% {
+        text-shadow: 2px 0 1px rgba(0, 252, 34, 0.6);
+    }
+    100% {
+        text-shadow: 2px 0 10px rgb(255, 0, 0);
+    }
+
+}
+
+.btnContainer{
+    display: flex;
+    align-items: center;
+
+    top: 200px;
+    position:absolute;
+}
+.btnContainer button{
+    margin: 2px 5px;
+}
+
+button{
+    background-color: transparent;
+    border: 3px solid var(--light-gray);
+    align-items: center;
+    text-align: center;
+    color: #1e1a17;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 12px;
+    height: 30px;
+    
+    cursor: pointer;
+}
+
+button:hover{
+    animation: btnanime;
+    animation-duration: 3s
+}
+
+
+@keyframes btnanime{
+    from {
+        
+    }
+}
