@@ -10,8 +10,8 @@
     margin: 0;
 }
 :root {
-    --orange: #FF6600;
-    --light-gray: #392020;
+    --orange: #0b0c10;
+    --light-gray: #66fcf1;
     --green: #F5F5F5;
     --purple: #604CC3;
     --spancolor: #f5f5f5;
@@ -51,7 +51,7 @@
 }
 
 .saluteImgwrapper {
-    background: linear-gradient(to bottom, #245269, #001727);
+    background-color: #ffb404;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     width: 22vw;
     height: 26vw;
@@ -61,9 +61,10 @@
     bottom: 11px;
     left: 40px;
     position: absolute;
-  }
+}
 
-  .saluteImgwrapper img {
+.saluteImgwrapper img {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     transform: scale(1.2);
     position: absolute;
     width: 100%; /* Adjust the width to fit the parent */
@@ -91,26 +92,17 @@ h4{
     cursor: default;
     font-weight: 900;
     font-size: 3vh;
+    color: #c5c6c7;
 }
 
 .imgTextDesc span{
     font-size: 16px;
     font-weight: 900;
-    color: var(--spancolor);
+    color: var(--light-gray);
     /* -webkit-text-stroke: 1px black; */
-    -webkit-animation: glow 3s ease-in-out infinite alternate;
-    -moz-animation: glow 3s ease-in-out infinite alternate;
-    animation: glow 3s ease-in-out infinite alternate;
-}
-@keyframes glow {
-    0% {
-        text-shadow: 2px 0 1px rgba(0, 252, 34, 0.6);
-    }
-    100% {
-        text-shadow: 2px 0 10px rgb(255, 0, 0);
-    }
 
 }
+
 
 .btnContainer{
     display: flex;
